@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: "Oswald", sans-serif;
+  padding: 80px;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 24px;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 24px;
+}
+
+p {
+  font-size: 16px;
+  margin: 0 0 8px 0;
+}
+
+p.counter {
+  font-size: 36px;
+  margin: 16px 0;
+}
+
+p span {
+  font-weight: 500;
+}
+.btn {
+  cursor: pointer;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  color: white;
+  border-radius: 16px;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  transition: background-color 200ms ease-in-out;
+}
+
+.start-btn {
+  background-color: green;
+}
+
+.start-btn:hover {
+  background-color: rgb(9, 179, 9);
+}
+
+.start-btn:disabled {
+  background-color: rgb(171, 255, 171);
+}
+
+.pause-btn {
+  background-color: #cc3433;
+}
+
+.pause-btn:hover {
+  background-color: #ef4949;
+}
+
+.pause-btn:disabled {
+  background-color: #fe9292;
+}
+.reset-btn {
+  background-color: blue;
+}
+
+.reset-btn:hover {
+  background-color: rgb(83, 83, 241);
+}
+
+.reset-btn:disabled {
+  background-color: rgb(138, 138, 255);
+}

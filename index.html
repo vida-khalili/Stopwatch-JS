@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stop watch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Stopwatch</h1>
+      <p>Press the <span>Start</span> button to count every one second</p>
+      <p>Press the <span>Stop</span> to pause the counter</p>
+      <p class="counter">0</p>
+      <div class="buttons">
+        <button type="button" onclick="start()" class="start-btn btn">
+          Start
+        </button>
+        <button type="button" onclick="pause()" class="pause-btn btn">
+          Pause
+        </button>
+        <button type="button" onclick="reset()" class="reset-btn btn">
+          Reset
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
