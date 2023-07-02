@@ -28,12 +28,15 @@ h1 {
 }
 
 p {
-  font-size: 16px;
+  text-align: left;
+  font-size: 12px;
   margin: 0 0 8px 0;
 }
 
 p.counter {
-  font-size: 36px;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
   margin: 16px 0;
 }
 

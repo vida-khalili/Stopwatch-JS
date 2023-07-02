@@ -11,13 +11,23 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script src="
+      https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js
+      "></script>
     <script src="./script.js"></script>
   </head>
-  <body>
+  <body onload="onloadCounter()">
     <div class="container">
       <h1>Stopwatch</h1>
-      <p>Press the <span>Start</span> button to count every one second</p>
-      <p>Press the <span>Stop</span> to pause the counter</p>
+      <p>Press the <span>Start</span> button to count every one second.</p>
+      <p>
+        Press the <span>Pause</span> to pause the counter, you can can start
+        again from were you paused.
+      </p>
+      <p>
+        Press the <span>Reset</span> to reset the counter, it sets the counter
+        to 0.
+      </p>
       <p class="counter">0</p>
       <div class="buttons">
         <button type="button" onclick="start()" class="start-btn btn">
