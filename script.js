@@ -2,12 +2,14 @@ let count = 0;
 let countInterval;
 
 function onloadCounter() {
-  count = Number(Cookies.get("count"));
-  document.querySelector(".counter").innerHTML = count;
+  if (document.cookie !== "") {
+    count = Number(Cookies.get("count"));
+    document.querySelector(".counter").innerHTML = count;
 
-  let previousSate = Cookies.get("state");
-  if (previousSate === "started") {
-    start();
+    let previousSate = Cookies.get("state");
+    if (previousSate === "started") {
+      start();
+    }
   }
 }
 
